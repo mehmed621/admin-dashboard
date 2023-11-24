@@ -317,6 +317,11 @@ height: 28px;
   padding: 10px 7px;
 }
 
+.announcement-header,
+.announcement-text{
+  padding: 0 .3rem;
+}
+
 
 /*-----Trending-----*/
 
@@ -361,11 +366,6 @@ height: 28px;
 
 .trending-item-name h3 {
   align-self: start;
-}
-
-.announcement-header,
-.announcement-text{
-  padding: 0 .3rem;
 }
 
 .trending-item-project-name{
