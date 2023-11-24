@@ -1,0 +1,377 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: dodgerblue;
+  font-family: "Roboto", sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding-inline-start: 0;
+}
+
+.container {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 4fr 19fr;
+}
+
+/*----------SIDEBAR---------- */
+
+.sidebar {
+  grid-row: 1 / 5;
+  display: grid;
+  grid-template-rows: 1fr 10fr 3fr;
+  padding: 1.5rem;
+  padding-top: 10px;
+  height: 60%;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.dashboard-logo {
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-logo:hover{
+  cursor: pointer;
+}
+
+#dashboard-svg {
+  margin-right: 0.7rem;
+  width: 40px;
+  height: 40px;
+}
+
+.sidebar-ul {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5vh;
+}
+
+.sidebar-ul li {
+  display: flex;
+  margin-bottom: 3.5vh;
+  align-items: center;
+}
+
+.sidebar-ul li:hover{
+  transform: scale(1.1);
+  transition: 1s ease-out all;
+}
+
+.sidebar-svg{
+  width: 26px;
+  height: 26px;
+  margin-right: 1.6rem;
+}
+
+
+
+/*----------HEADER---------- */
+
+header {
+  display: grid;
+  grid-template-rows: 2fr 3fr;
+  background-color: white;
+  box-shadow: 3px 4px rgb(58, 58, 58);
+}
+
+/*-----Top side of the header-----*/
+
+.searchbar {
+  display: grid;
+  grid-template-columns: 8fr 3fr;
+}
+
+.searchbar-svg{
+  width: 28px;
+  height: 28px;
+}
+
+.searchbar-input {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 11fr;
+  justify-items: center;
+}
+
+input {
+  width: 80%;
+  height: 50%;
+  justify-self: start;
+  border-radius: 16px;
+  border: none;
+  padding: 0 0.7rem;
+  font-size: 1rem;
+  background-color: rgb(233, 233, 233);
+}
+
+.notifications {
+  display: grid;
+  grid-template-columns: 1fr 2fr 4fr;
+  align-items: center;
+  padding-left: 5px;
+  justify-items: center;
+}
+
+.profileimage {
+  width: 35px;
+  height: 35px;
+  background-color: cornflowerblue;
+  border-radius: 50%;
+}
+
+.usernamehere {
+  justify-self: start;
+}
+
+
+/*-----Bottom side of the header-----*/
+
+.profileinfos {
+  display: grid;
+  grid-template-columns: 6fr repeat(3, 1fr);
+  padding-right: 1.3rem;
+}
+
+.profileinfos-left {
+  display: grid;
+  grid-template-columns: 2fr 11fr;
+  align-items: center;
+  justify-items: center;
+  column-gap: 5px;
+}
+
+.big-user-image {
+  background-color: cornflowerblue;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  justify-self: end;
+  margin-right: 1.5vw;
+}
+
+.hithere {
+  justify-self: start;
+  display: grid;
+  justify-items: start;
+  grid-template-rows: 2fr 3fr;
+  align-items: end;
+}
+
+.hithere-text {
+  margin-bottom: 0;
+  align-self: end;
+}
+
+.profileinfos-right {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+button {
+  width: 80%;
+  height: 40%;
+  background-color: dodgerblue;
+  color: white;
+  padding: .5rem 1rem;
+  font-size: .95rem;
+  border-radius: 22px;
+  border: none;
+  font-weight: 600;
+}
+
+button:hover{
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+
+/*----------MAIN----------*/
+
+main {
+  padding: 1.25rem;
+  padding-top: 0;
+  grid-row: 2 / 5;
+  display: grid;
+  grid-template-rows: 1fr 5fr 1fr 4fr 1fr;
+  grid-template-columns: 8fr 3fr;
+  column-gap: 20px;
+  row-gap: 1rem;
+  padding-bottom: 50px;
+  background-color: rgba(230, 230, 230, 0.9);
+}
+
+h2 { /*includes Morgan Oakley text under the "Hi there"*/
+  margin-block-end: 0;
+  align-self: start;
+  margin-top: 3px;
+}
+
+.left-title,
+.right-title,
+.trending-title {
+  align-self: end;
+}
+
+
+/*-----Cards-----*/
+
+.cards {
+  grid-row: 2 / 6;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 8px 16px;
+  border-left: 9px solid orange;
+  border-radius: 6px;
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  box-shadow: 3px 4px rgba(197, 196, 196, 0.9);
+}
+
+.card-title {
+  align-self: end;
+  padding-bottom: 5px;
+}
+
+.card-title h3{
+  margin-block-end: 0;
+}
+
+.card-title h3:hover{
+  cursor: pointer;
+}
+
+.card-explanation {
+  margin-block-start: 0;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: 7fr 2fr 2fr 2fr;
+  align-self: end;
+  margin-bottom: 1rem;
+  justify-items: center;
+}
+
+.options-svg{
+width: 28px;
+height: 28px;
+}
+
+.options-svg:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: .5s ease all;
+}
+
+
+/*-----Announcements-----*/
+
+.announcements {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 10px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 3px 4px rgba(197, 196, 196, 0.9);
+}
+
+.announcements-item {
+  border-bottom: 1px solid grey;
+}
+
+.announcements-item h3 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.announcements-item p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.last-child {
+  border: none;
+}
+
+.announcement-item-text {
+  padding: 10px 7px;
+}
+
+
+/*-----Trending-----*/
+
+.trending {
+  grid-row: 4 / 6;
+  background-color: white;
+  border-radius: 12px;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  box-shadow: 3px 4px rgba(197, 196, 196, 0.9);
+  padding: .75rem 0;
+}
+
+.trending-item {
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+}
+
+.trending-item-photo {
+  background-color: violet;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  justify-self: center;
+  align-self: center;
+}
+
+.trending-item-name {
+  justify-self: start;
+  display: grid;
+  justify-items: start;
+  grid-template-rows: 5fr 6fr;
+  align-items: end;
+  row-gap: .25rem;
+}
+
+.trending-item-name h3,
+.trending-item-name h5 {
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+.trending-item-name h3 {
+  align-self: start;
+}
+
+.announcement-header,
+.announcement-text{
+  padding: 0 .3rem;
+}
+
+.trending-item-project-name{
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+
+

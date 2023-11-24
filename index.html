@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+
+
+       <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="dashboard-logo">
+          <img
+            id="dashboard-svg"
+            src="./assets/view-dashboard.svg"
+            alt="dashboardsvg"
+          />
+          Dashboard
+        </div>
+        <nav class="home-list">
+          <ul class="sidebar-ul">
+            <li class="sidebar-ul-item">
+              <img class="sidebar-svg" src="assets/home.svg" alt="homesvg" />
+              <a href="#">Home</a>
+            </li>
+            <li class="sidebar-ul-item">
+              <img
+                class="sidebar-svg"
+                src="./assets/card-account-details-outline.svg"
+                alt="profilesvg"
+              />
+              <a href="#">Profile</a>
+            </li>
+            <li class="sidebar-ul-item">
+              <img
+                class="sidebar-svg"
+                src="./assets/message.svg"
+                alt="messagessvg"
+              />
+              <a href="#">Messages</a>
+            </li>
+            <li class="sidebar-ul-item">
+              <img
+                class="sidebar-svg"
+                src="./assets/clock-time-three.svg"
+                alt="historysvg"
+              />
+              <a href="#">History</a>
+            </li>
+            <li class="sidebar-ul-item">
+              <img
+                class="sidebar-svg"
+                src="./assets/note-multiple.svg"
+                alt="taskssvg"
+              />
+              <a href="#">Tasks</a>
+            </li>
+            <li class="sidebar-ul-item">
+              <img
+                class="sidebar-svg"
+                src="./assets/account-group.svg"
+                alt="communitiessvg"
+              />
+              <a href="#">Communities</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="settings-list">
+          <ul class="sidebar-ul">
+            <li class="sidebar-ul-item">
+              <img
+                class="sidebar-svg"
+                src="./assets/cog-outline.svg"
+                alt="settingssvg"
+              />
+              <a href="#">Settings</a>
+            </li>
+            <li class="sidebar-ul-item">
+              <img
+                class="sidebar-svg"
+                src="./assets/help-box.svg"
+                alt="supportsvg"
+              />
+              <a href="#">Support</a>
+            </li>
+            <li class="sidebar-ul-item">
+              <img
+                class="sidebar-svg"
+                src="./assets/shield-check.svg"
+                alt="privacysvg"
+              />
+              <a href="#">Privacy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+
+      <!-- Header -->
+      <header>
+        <div class="searchbar">
+          <div class="searchbar-input">
+            <a href="#">
+             <img
+               class="searchbar-svg"
+               src="./assets/magnify.svg"
+               alt="magnifysvg"
+             />
+            </a>
+            <input type="text" />
+          </div>
+          <div class="notifications">
+            <a href="#">
+              <img
+                class="searchbar-svg"
+                src="./assets/bell-ring-outline.svg"
+                alt="bellringsvg"
+              />
+            </a>
+
+            <div class="profileimage"></div>
+
+            <h3 class="usernamehere"><a href="#">Morgan Oakley</a></h3>
+          </div>
+        </div>
+        <div class="profileinfos">
+          <div class="profileinfos-left">
+            <div class="big-user-image"></div>
+            <div class="hithere">
+              <h5 class="hithere-text">Hi there,</h5>
+              <h2><a href="#">Morgan Oakley (@morgan)</a></h2>
+            </div>
+          </div>
+          <div class="profileinfos-right">
+            <button>New</button>
+          </div>
+          <div class="profileinfos-right">
+            <button>Upload</button>
+          </div>
+          <div class="profileinfos-right">
+            <button>Share</button>
+          </div>
+        </div>
+      </header>
+
+
+      <!-- Main -->
+      <main>
+        <h2 class="left-title">Your projects</h2>
+        <h2 class="right-title">Announcements</h2>
+        <div class="cards">
+          <div class="card">
+            <div class="card-title">
+              <h3>Super Cool Project</h3>
+            </div>
+            <p class="card-explanation">
+              Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh
+              erat, id facilisis felis accumsan nec.
+            </p>
+            <div class="options">
+              <div></div>
+              <div>
+                <img
+                  class="options-svg"
+                  src="./assets/star-plus-outline.svg"
+                  alt="starplusoutline"
+                />
+              </div>
+              <div>
+                <img
+                  class="options-svg"
+                  src="./assets/eye-plus-outline.svg"
+                  alt="eyeoutline"
+                />
+              </div>
+              <div>
+                <img
+                  class="options-svg"
+                  src="./assets/share-variant.svg"
+                  alt="sharesvg"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <h3>Less Cool Project</h3>
+            </div>
+            <p class="card-explanation">
+              Nullam condimentum ipsum ut vehicula consectetur. Quisque sed
+              dolor tincidunt, consectetur sapien et, facilisis dolor. Duis sem
+              purus, dignissum ut sapien in, varius pellentesque lacus.
+            </p>
+            <div class="options">
+              <div></div>
+              <div>
+                <img
+                  class="options-svg"
+                  src="./assets/star-plus-outline.svg"
+                  alt="starplusoutline"
+                />
+              </div>
+              <div>
+                <img
+                  class="options-svg"
+                  src="./assets/eye-plus-outline.svg"
+                  alt="eyeoutline"
+                />
+              </div>
+              <div>
+                <img
+                  class="options-svg"
+                  src="./assets/share-variant.svg"
+                  alt="sharesvg"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <h3>Impossible App</h3>
+            </div>
+            <p class="card-explanation">
+              In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a
+              placerat velit sagittis id.
+            </p>
+            <div class="options">
+              <div></div>
+              <div>
+                <img
+                  class="options-svg"
+                  src="./assets/star-plus-outline.svg"
+                  alt="starplusoutline"
+                />
+              </div>
+              <div>
+                <img
+                  class="options-svg"
+                  src="./assets/eye-plus-outline.svg"
+                  alt="eyeoutline"
+                />
+              </div>
+              <div>
+                <img
+                  class="options-svg"
+                  src="./assets/share-variant.svg"
+                  alt="sharesvg"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <h3>Easy Peasy App</h3>
+            </div>
+            <p class="card-explanation">
+              Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim
+              urna eget accumsan aliquam. Curabitur dignissim nisi in tortor
+              commodo, ac bibendum magna tincidunt.
+            </p>
+            <div class="options">
+              <div></div>
+              <div>
+                <img
+                  class="options-svg"
+                  src="./assets/star-plus-outline.svg"
+                  alt="starplusoutline"
+                />
+              </div>
+              <div>
+                <img
+                  class="options-svg"
+                  src="./assets/eye-plus-outline.svg"
+                  alt="eyeoutline"
+                />
+              </div>
+              <div>
+                <img
+                  class="options-svg"
+                  src="./assets/share-variant.svg"
+                  alt="sharesvg"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <h3>Ad Blocker</h3>
+            </div>
+            <p class="card-explanation">
+              Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel,
+              pharetra hendrerit felis. Aliquam sad malesuada eros.
+            </p>
+            <div class="options">
+              <div></div>
+              <div>
+                <img
+                  class="options-svg"
+                  src="./assets/star-plus-outline.svg"
+                  alt="starplusoutline"
+                />
+              </div>
+              <div>
+                <img
+                  class="options-svg"
+                  src="./assets/eye-plus-outline.svg"
+                  alt="eyeoutline"
+                />
+              </div>
+              <div>
+                <img
+                  class="options-svg"
+                  src="./assets/share-variant.svg"
+                  alt="sharesvg"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <h3>Money Maker</h3>
+            </div>
+            <p class="card-explanation">
+              Praesent convallis, libero quis congue elementum, nunc ante
+              faucibus sapien, ac scelerisque tortor purus sit amet ex.
+              Pellentesque mollis nec sem vel aliquam.
+            </p>
+            <div class="options">
+              <div></div>
+              <div>
+                <img
+                  class="options-svg"
+                  src="./assets/star-plus-outline.svg"
+                  alt="starplusoutline"
+                />
+              </div>
+              <div>
+                <img
+                  class="options-svg"
+                  src="./assets/eye-plus-outline.svg"
+                  alt="eyeoutline"
+                />
+              </div>
+              <div>
+                <img
+                  class="options-svg"
+                  src="./assets/share-variant.svg"
+                  alt="sharesvg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="announcements">
+          <div class="announcements-item">
+            <div class="announcement-item-text">
+              <h3 class="announcement-header">Site maintenance</h3>
+              <p class="announcement-text">
+                Vestibulum condimentum tellus lacus, in accumsan elit maximus
+                ac. Donec hendrerit sodales congue...
+              </p>
+            </div>
+          </div>
+
+          <div class="announcements-item">
+            <div class="announcement-item-text">
+              <h3 class="announcement-header">Community Share Day</h3>
+              <p class="announcement-text">
+                Nam vel lectus tindicunt, rutrum nulla eu, ornare libero.
+                Aliquam dictum accumsan porttitor...
+              </p>
+            </div>
+          </div>
+
+          <div class="announcements-item last-child">
+            <div class="announcement-item-text">
+              <h3 class="announcement-header">Updated Privacy Policy</h3>
+              <p class="announcement-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id
+                deserunt cum labore iste. Numquam!
+              </p>
+            </div>
+          </div>
+        </div>
+        <h2 class="trending-title">Trending</h2>
+        <div class="trending">
+          <div class="trending-item">
+            <div class="trending-item-photo"></div>
+            <div class="trending-item-name">
+              <h5><a href="#">@tegan</a></h5>
+              <h3 class="trending-item-project-name">
+                <a href="#">World Peace Builder</a>
+              </h3>
+            </div>
+          </div>
+
+          <div class="trending-item">
+            <div class="trending-item-photo"></div>
+            <div class="trending-item-name">
+              <h5><a href="#">@morgan</a></h5>
+              <h3 class="trending-item-project-name">
+                <a href="#">Super Cool Project</a>
+              </h3>
+            </div>
+          </div>
+
+          <div class="trending-item">
+            <div class="trending-item-photo"></div>
+            <div class="trending-item-name">
+              <h5><a href="#">@kendall</a></h5>
+              <h3 class="trending-item-project-name">
+                <a href="#">Life Changing App</a>
+              </h3>
+            </div>
+          </div>
+
+          <div class="trending-item">
+            <div class="trending-item-photo"></div>
+            <div class="trending-item-name">
+              <h5>
+                <a href="#">@alex</a>
+              </h5>
+              <h3 class="trending-item-project-name">
+                <a href="#">Life Changing App</a>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
